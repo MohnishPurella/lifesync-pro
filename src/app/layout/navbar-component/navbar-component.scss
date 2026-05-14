@@ -1,0 +1,38 @@
+.navbar-bar {
+  height: var(--ls-navbar-height);
+  background: white;
+  border-bottom: 1px solid #e5e7ef;
+  position: fixed;
+  top: 0;
+  left: var(--ls-sidebar-width);
+  right: 0;
+  z-index: 100;
+}
+
+.navbar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1e2d;
+}
+
+.action-icon {
+  font-size: 18px;
+  color: #6b7280;
+  cursor: pointer;
+
+  &:hover { color: var(--ls-primary); }
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--ls-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

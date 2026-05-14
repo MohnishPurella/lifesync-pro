@@ -1,0 +1,31 @@
+<div class="sidebar d-flex flex-column">
+
+  <!-- Logo -->
+  <div class="sidebar-logo">
+    <i class="bi bi-lightning-charge-fill"></i>
+    <span>LifeSync <strong>Pro</strong></span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sidebar-nav flex-grow-1">
+    <ul class="list-unstyled">
+      @for (item of menuItems; track item.route) {
+        <li>
+          <a [routerLink]="item.route"
+             routerLinkActive="active"
+             class="sidebar-link">
+            <i class="bi {{ item.icon }}"></i>
+            <span>{{ item.label }}</span>
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+
+  <!-- Bottom profile area -->
+  <div class="sidebar-footer">
+    <i class="bi bi-person-circle"></i>
+    <span>My Profile</span>
+  </div>
+
+</div>

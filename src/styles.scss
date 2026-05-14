@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+// Bootstrap
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+// Your LifeSync Pro global variables
+:root {
+  --ls-sidebar-width: 260px;
+  --ls-navbar-height: 60px;
+  --ls-primary: #6c63ff;
+  --ls-bg: #f4f6fb;
+  --ls-sidebar-bg: #1e1e2d;
+  --ls-sidebar-text: #a0a3bd;
+  --ls-sidebar-active: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--ls-bg);
+  font-family: 'Segoe UI', sans-serif;
+}
